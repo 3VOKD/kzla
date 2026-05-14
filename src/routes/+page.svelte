@@ -72,7 +72,7 @@
     <img src={frames[current]} alt="Animation frame" class="flex justify-center items-center mx-auto relative p-0 mt-6" />
     
     
-    <div class="flex h-60 w-[80%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
+    <div class="flex h-60 md:h-100 w-[80%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
         <div class="flex w-[90%] h-[90%] justify-center items-center mx-auto flex-col text-center">
         
             {#if !player}
@@ -104,7 +104,7 @@
                 </button>
                 
             {:else if (!about && !player)}
-                <span class='bg-platinum justify-center items-center w-12 aspect-square rounded-full p-0 m-0 translate-y-3'>
+                <span class='bg-platinum justify-center items-center w-12 aspect-square rounded-full p-0 m-0 translate-y-3 md:translate-y-10'>
                     <button onclick={() => player = !player} title='demo reel'>
                         <i class="fa-solid fa-film text-iron hover:scale-75 active:scale-75 transition-all duration-300 ease-in-out"></i>
                     </button>
