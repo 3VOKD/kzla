@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv@0.15.2 create --template minimal --types jsdoc --add prettier vitest="usages:unit,component" playwright tailwindcss="plugins:none" eslint sveltekit-adapter="adapter:cloudflare+cfTarget:pages" --install npm por
+npx sv@0.15.3 create --template minimal --types jsdoc --add prettier vitest="usages:unit,component" playwright tailwindcss="plugins:none" sveltekit-adapter="adapter:static" --install npm neo
 ```
 
 ## Developing
