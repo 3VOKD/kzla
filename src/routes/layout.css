@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import 'tailwindcss';
+
+
+@theme{
+    --font-jersey-25: 'Jersey 25', sans-serif;
+    --color-snow: #f8f9fa;
+    --color-platinum: #e9ecef;
+    --color-iron: #495057;
+    --color-shadow: #212529;
+}
+
+@layer base{
+    html{
+        @apply bg-shadow text-platinum font-jersey-25;
+    }
+    
+    h1{
+        @apply text-4xl;
+    }
+    
+    p{
+        @apply text-xl;
+    }
+    
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.inter{
+    @apply hover:scale-100 active:scale-100 transition-all duration-300 ease-in-out;
+}
+
+.icon{
+    @apply scale-125 text-platinum  hover:text-iron active:text-iron;
+}
