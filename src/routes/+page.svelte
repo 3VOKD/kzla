@@ -72,13 +72,13 @@
     <img src={frames[current]} alt="Animation frame" class="flex justify-center items-center mx-auto relative p-0 mt-6" />
     
     
-    <div class="flex h-60 sm:h-115 lg:h-203 xl:h-100 w-[80%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
+    <div class="flex h-60 sm:h-115 lg:h-137 w-[80%] lg:w-[60%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
         <div class="flex w-[90%] h-[90%] justify-center items-center mx-auto flex-col text-center">
         
             {#if !player}
             
                 <h1 class="mt-9 mb-2">{header}</h1>
-                <p class="h-[90%] sm:flex sm:text-center sm:items-center">{text}</p>
+                <p class="h-[90%] sm:flex sm:text-center sm:items-center lg:w-[80%] lg:justify-center">{text}</p>
                 
                 
             {:else if (player && !about)}
