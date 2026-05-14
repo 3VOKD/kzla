@@ -16,7 +16,7 @@
     let header_entry = 'Hi, I\'m Karlo';
     let header_about = 'Contact me at:';
     
-    let text_entry = 'I am a software developer that likes cybersecurity and game development.';
+    let text_entry = 'I specialize in Cybersecurity to protect digital environments and partake in the imaginative world building of Game Development.';
     let text_about = '3vokd.dev@gmail.com';
     
     let header = $state(header_entry);
@@ -87,7 +87,7 @@
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/MSFred1oHfo?si=o12-bB92gT7Or0SU?autoplay=1&mute=1"
+                        src="https://www.youtube.com/embed/rYP00Qirv6g?si=RfWsHGlQbebUFXAo&amp;autoplay=1&mute=1"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -104,7 +104,7 @@
                 </button>
                 
             {:else if (!about && !player)}
-                <span class='bg-platinum justify-center items-center w-12 aspect-square rounded-full p-0 m-0 translate-y-9 '>
+                <span class='bg-platinum justify-center items-center w-12 aspect-square rounded-full p-0 m-0 translate-y-6 '>
                     <button onclick={() => player = !player} title='demo reel'>
                         <i class="fa-solid fa-film text-iron hover:scale-75 active:scale-75 transition-all duration-300 ease-in-out"></i>
                     </button>
