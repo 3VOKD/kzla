@@ -15,7 +15,7 @@ const config = {
 		}),
 		paths: {
 			// Replace 'your-repo-name' with your actual repository name
-			base: process.env.NODE_ENV === 'production' ? '/github' : '',
+			base: process.env.NODE_ENV === 'production' ? '/main' : '',
 		}
 	  }
 };
