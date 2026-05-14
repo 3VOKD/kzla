@@ -120,8 +120,8 @@
         class = 'fade-in'
         class:hidden={!loaded}
         title="Bropo"
-        width="390"
-        height="200"
+        width="100%"
+        height="100%"
         allow="autoplay">
         </iframe>
     </div>
