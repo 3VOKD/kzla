@@ -72,13 +72,13 @@
     <img src={frames[current]} alt="Animation frame" class="flex justify-center items-center mx-auto relative p-0 mt-6" />
     
     
-    <div class="flex h-60 md:h-100 w-[80%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
+    <div class="flex h-60 md:h-200 lg:h-203 xl:h-100 w-[80%] bg-iron rounded-lg justify-center items-center flex-col mx-auto -mt-3 overflow-hidden">
         <div class="flex w-[90%] h-[90%] justify-center items-center mx-auto flex-col text-center">
         
             {#if !player}
             
                 <h1 class="mt-9 mb-2">{header}</h1>
-                <p class="h-[90%]">{text}</p>
+                <p class="h-[90%] lg:flex lg:text-center lg:items-center lg:w-[90%] lg:mx-auto">{text}</p>
                 
                 
             {:else if (player && !about)}
@@ -104,9 +104,9 @@
                 </button>
                 
             {:else if (!about && !player)}
-                <span class='bg-platinum justify-center items-center w-12 aspect-square rounded-full p-0 m-0 translate-y-3 md:translate-y-10'>
+                <span class='bg-platinum justify-center items-center w-12 lg:w-24 aspect-square rounded-full p-0 m-0 translate-y-3 lg:translate-y-22'>
                     <button onclick={() => player = !player} title='demo reel'>
-                        <i class="fa-solid fa-film text-iron hover:scale-75 active:scale-75 transition-all duration-300 ease-in-out"></i>
+                        <i class="fa-solid fa-film text-iron lg:scale-200 hover:scale-75 active:scale-75 lg:hover:scale-175 lg:active:scale-175 lg:mt-4 transition-all duration-300 ease-in-out"></i>
                     </button>
                     
                 </span>
@@ -129,7 +129,7 @@
     <div class="flex flex-col w-full gap-2 -mt-6">
         <span class="bg-iron h-2 mt-6"></span>
         
-        <ul class="flex justify-center items-center gap-6 ">
+        <ul class="flex justify-center items-center gap-6 lg:gap-12">
             <li>
                 <a href="https://3vokd.itch.io/" title="itch.io">
                     <i class="fa-brands fa-itch-io icon inter"></i>
